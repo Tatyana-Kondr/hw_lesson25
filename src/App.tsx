@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/Button";
+import Header from "./components/Header";
+import Image from "./components/Image";
+import Student from "./components/Student";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Button title={"Нажми меня!"} />
+      <Header title={"Самый главный заголовок"}/>
+      <Image imageUrl={"https://i.pinimg.com/474x/36/8b/34/368b34fa81d59ba7dc0358388542d2c9.jpg"} />
+      <Student lastName={"Ivanov"} name={"Ivan"} grades={[5, 3, 4, 3, 4, 5, 3]} />
+      <Student lastName={"Petrov"} name={"Peter"} grades={[]} />
+      <Student lastName={"Sidorov"} name={"Sidor"} grades={[3, 2, 4, 4, 3, 3]} />
     </div>
   );
 }
